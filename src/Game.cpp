@@ -161,45 +161,7 @@ void Game::LoadLevel(int levelNumber) {
     Entity& labelLevelName(manager.AddEntity("LabelLevelName", UI_LAYER));
     labelLevelName.AddComponent<TextLabelComponent>(10, 10, "Asteroids", "charriot-font", WHITE_COLOR);
 
-    /*assetManager->AddTexture("tank-image", std::string("./assets/images/tank-big-right.png").c_str());
-    assetManager->AddTexture("chopper-image", std::string("./assets/images/chopper-spritesheet.png").c_str());
-    assetManager->AddTexture("radar-image", std::string("./assets/images/radar.png").c_str());
-    assetManager->AddTexture("jungle-tiletexture", std::string("./assets/tilemaps/jungle.png").c_str());
-    assetManager->AddTexture("heliport-image", std::string("./assets/images/heliport.png").c_str());
-    assetManager->AddTexture("projectile-image", std::string("./assets/images/bullet-enemy.png").c_str()); 
-    assetManager->AddFont("charriot-font", std::string("./assets/fonts/charriot.ttf").c_str(), 14);
-
-    map = new Map("jungle-tiletexture", 2, 32);
-    map->LoadMap("./assets/tilemaps/jungle.map", 25, 20);
-
-    /* Start including entities and also components to them */
-    /*player.AddComponent<TransformComponent>(240, 106, 0, 0, 32, 32, 1);
-    player.AddComponent<SpriteComponent>("chopper-image", 2, 90, true, false);
-    player.AddComponent<KeyboardControlComponent>("up", "right", "down", "left", "space");
-    player.AddComponent<ColliderComponent>("PLAYER", 240, 106, 32, 32);
-
-    Entity& tankEntity(manager.AddEntity("tank", ENEMY_LAYER));
-    tankEntity.AddComponent<TransformComponent>(150, 495, 0, 0, 32, 32, 1);
-    tankEntity.AddComponent<SpriteComponent>("tank-image");
-    tankEntity.AddComponent<ColliderComponent>("ENEMY", 150, 495, 32, 32);
-
-    Entity& projectile(manager.AddEntity("projectile", PROJECTILE_LAYER));
-    projectile.AddComponent<TransformComponent>(150+16, 495+16, 0, 0, 4, 4, 1);
-    projectile.AddComponent<SpriteComponent>("projectile-image");
-    projectile.AddComponent<ColliderComponent>("PROJECTILE", 150+16, 495+16, 4, 4);
-    projectile.AddComponent<ProjectileEmitterComponent>(50, 270, 200, false);
-
-    Entity& heliport(manager.AddEntity("Heliport", OBSTACLE_LAYER));
-    heliport.AddComponent<TransformComponent>(470, 420, 0, 0, 32, 32, 1);
-    heliport.AddComponent<SpriteComponent>("heliport-image");
-    heliport.AddComponent<ColliderComponent>("LEVEL_COMPLETE", 470, 420, 32, 32);
-
-    Entity& radarEntity(manager.AddEntity("Radar", UI_LAYER));
-    radarEntity.AddComponent<TransformComponent>(720, 15, 0, 0, 64, 64, 1);
-    radarEntity.AddComponent<SpriteComponent>("radar-image", 8, 150, false, true);
-
-    Entity& labelLevelName(manager.AddEntity("LabelLevelName", UI_LAYER));
-    labelLevelName.AddComponent<TextLabelComponent>(10, 10, "First Level...", "charriot-font", WHITE_COLOR);*/
+    
 }
 
 void Game::ProcessInput() {
