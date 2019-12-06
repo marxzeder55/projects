@@ -17,7 +17,7 @@ EntityManager manager;
 AssetManager* Game::assetManager = new AssetManager(&manager);
 SDL_Renderer* Game::renderer;
 SDL_Event Game::event;
-SDL_Rect Game::camera = {0, 0, WINDOW_WIDTH, WINDOW_HEIGHT};
+SDL_Rect Game::camera = {0, 0, WINDOW_WIDTH, 50};
 Map* map;
 
 Game::Game() {
